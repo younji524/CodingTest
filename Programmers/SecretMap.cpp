@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// function for changing decimal number to binary
 string binary(int n, int size) {
     string answer;
     long sum = 0;
