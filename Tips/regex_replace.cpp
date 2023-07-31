@@ -21,5 +21,3 @@ int main(void)
     cout << s; // "OneTwo3"
     cout << s2; // "."
 }
-
-![image](https://github.com/younji524/CodingTest/assets/76142194/89954ddd-b93e-4941-9489-e3529cf9e6e2)
