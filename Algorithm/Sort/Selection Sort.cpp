@@ -14,15 +14,13 @@ int main(){
   int arr[8] = {8, 6, 5, 3, 1, 2, 7, 4};
   
   for(int i = 0; i < 8; i++) {
-    int min = arr[i];
-    int loc = i;
+    int idx = i;
     for (int j = i + 1; j < 8; j++) {
-      if (min > arr[j]) {
-        min = arr[j]; // i 뒤 모든 원소들의 값을 확인해 가장 작은 값 할당
-        loc = j;  // 최소값의 위치를 저장
+      if (arr[idx] > arr[j]) {
+        idx = j;  // i 뒤 모든 원소들의 값을 확인해 최소값의 위치를 저장
       }
     }
-    swap(arr[i], arr[loc]);  // 최소값의 위치와 i의 위치를 스왑해 최소값을 가장 앞으로 위치하도록 함
+    swap(arr[i], arr[idx]);  // 최소값의 위치와 i의 위치를 스왑해 최소값을 가장 앞으로 위치하도록 함
   }
 
   for(int i = 0; i < 8; i++) {
