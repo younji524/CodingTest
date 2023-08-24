@@ -10,7 +10,7 @@ def merge_sort(s, e): # 시작점과 종료점
   if e - s < 1: return
   m = int(s + (e - s) / 2) # 중앙값의 정수형
   merge_sort(s, m) # 재귀함수 형태로 구현, 왼쪽 부분에 대해 병합 정렬
-  merge_sort(m + 1, e)
+  merge_sort(m + 1, e) # 오른쪽 부분에 대한 병합 정렬
 
   for i in range(s, e + 1):
     # tmp : 정렬할 때 잠시 사용할 임시 리스트 / A : 정렬할 대상 리스트
@@ -29,6 +29,7 @@ def merge_sort(s, e): # 시작점과 종료점
         A[k] = tmp[idx1]
         k += 1
         idx1 += 1
+        
     while idx1 <= m:
        A[k] = tmp[idx1]
         k += 1
