@@ -1,3 +1,4 @@
+# 올림, 내림 함수를 사용하기 위한 math 라이브러리 선언
 import math
 
 def solution(n, words):
