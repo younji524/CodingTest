@@ -5,7 +5,7 @@
 버블 정렬은 O(N^2)의 시간복잡도를 갖는다.
 */
 
-#include<iostream>
+#include<iostream>   // 출력 함수를 위한 헤더 파일
 #include<algorithm>  // swap 함수를 포함하는 헤더 파일
 
 using namespace std;
